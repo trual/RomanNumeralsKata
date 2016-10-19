@@ -112,6 +112,14 @@ namespace RomanNumeralsKata
             Assert.AreEqual("DLXXV", ToRoman.converter(575));
         }
 
+        [TestMethod()]
+        public void convert900and955and1575()
+        {
+            Assert.AreEqual("CM", ToRoman.converter(900));
+            Assert.AreEqual("CMLV", ToRoman.converter(955));
+            Assert.AreEqual("MDLXXV", ToRoman.converter(1575));
+        }
+
 
     }
 }

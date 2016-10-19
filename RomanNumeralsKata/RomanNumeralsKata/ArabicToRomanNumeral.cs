@@ -12,6 +12,8 @@ namespace RomanNumeralsKata
         public string converter(int v)
         {
             if (v < 1) return "";
+            if (v >= 1000) return "M" + converter(v - 1000);
+            if (v >= 900) return "CM" + converter(v - 900);
             if (v >= 500) return "D" + converter(v - 500);
             if (v >= 400) return "CD" + converter(v - 400);
             if (v >= 100) return "C" + converter(v - 100);
