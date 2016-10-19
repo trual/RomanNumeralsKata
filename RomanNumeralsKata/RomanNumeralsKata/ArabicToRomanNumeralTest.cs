@@ -97,11 +97,19 @@ namespace RomanNumeralsKata
         }
 
         [TestMethod()]
-        public void convert400and444and490()
+        public void convert400and444and475()
         {
             Assert.AreEqual("CD", ToRoman.converter(400));
             Assert.AreEqual("CDXLIV", ToRoman.converter(444));
             Assert.AreEqual("CDLXXV", ToRoman.converter(475));
+        }
+
+        [TestMethod()]
+        public void convert500and555and575()
+        {
+            Assert.AreEqual("D", ToRoman.converter(500));
+            Assert.AreEqual("DLV", ToRoman.converter(555));
+            Assert.AreEqual("DLXXV", ToRoman.converter(575));
         }
 
 
