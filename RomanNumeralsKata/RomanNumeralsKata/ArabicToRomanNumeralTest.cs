@@ -56,5 +56,15 @@ namespace RomanNumeralsKata
             Assert.AreEqual("IX", ToRoman.converter(9));
 
         }
+
+        [TestMethod()]
+        public void convert10and11and14 ()
+        {
+            Assert.AreEqual("X", ToRoman.converter(10));
+            Assert.AreEqual("XI", ToRoman.converter(11));
+            Assert.AreEqual("XIV", ToRoman.converter(14));
+        
+
+        }
     }
 }
