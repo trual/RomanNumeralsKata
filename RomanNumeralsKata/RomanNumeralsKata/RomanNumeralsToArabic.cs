@@ -22,7 +22,14 @@ namespace RomanNumeralsKata
 
         public int converter(string str)
         {
-            return RomanNumerals[str[0]];
+            int number = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                number += RomanNumerals[str[i]];
+            }
+
+
+            return number;
         }
     }
 }

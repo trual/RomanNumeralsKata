@@ -17,5 +17,11 @@ namespace RomanNumeralsKata
         {
             Assert.AreEqual(1, ToArabic.converter("I"));
         }
+
+        [TestMethod()]
+        public void convertIIto1()
+        {
+            Assert.AreEqual(2, ToArabic.converter("II"));
+        }
     }
 }
