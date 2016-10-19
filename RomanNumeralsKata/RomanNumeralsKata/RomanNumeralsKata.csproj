@@ -48,6 +48,8 @@
     <Compile Include="ArabicToRomanNumeralTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomanNumeralsToArabic.cs" />
+    <Compile Include="RomanNumeralsToArabicTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
