@@ -76,5 +76,34 @@ namespace RomanNumeralsKata
             Assert.AreEqual("XLIX", ToRoman.converter(49));
 
         }
+
+        [TestMethod()]
+        public void convert50a54a56a59a75()
+        {
+            Assert.AreEqual("L", ToRoman.converter(50));
+            Assert.AreEqual("LIV", ToRoman.converter(54));
+            Assert.AreEqual("LVI", ToRoman.converter(56));
+            Assert.AreEqual("LIX", ToRoman.converter(59));
+            Assert.AreEqual("LXXV", ToRoman.converter(75));
+
+        }
+
+        [TestMethod()]
+        public void convert99and135()
+        {
+            Assert.AreEqual("XCIX", ToRoman.converter(99));
+            Assert.AreEqual("CXXXV", ToRoman.converter(135));
+            Assert.AreEqual("CXLVI", ToRoman.converter(146));
+        }
+
+        [TestMethod()]
+        public void convert400and444and490()
+        {
+            Assert.AreEqual("CD", ToRoman.converter(400));
+            Assert.AreEqual("CDXLIV", ToRoman.converter(444));
+            Assert.AreEqual("CDLXXV", ToRoman.converter(475));
+        }
+
+
     }
 }
