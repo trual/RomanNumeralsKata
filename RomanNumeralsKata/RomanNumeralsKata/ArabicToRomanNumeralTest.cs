@@ -39,5 +39,15 @@ namespace RomanNumeralsKata
             
         }
 
+        [TestMethod()]
+        public void convert5and6and7and8()
+        {
+            Assert.AreEqual("V", ToRoman.converter(5));
+            Assert.AreEqual("VI", ToRoman.converter(6));
+            Assert.AreEqual("VII", ToRoman.converter(7));
+            Assert.AreEqual("VIII", ToRoman.converter(8));
+
+
+        }
     }
 }
