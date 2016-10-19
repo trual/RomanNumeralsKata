@@ -12,7 +12,7 @@ namespace RomanNumeralsKata
         public string converter(int v)
         {
             if (v < 1) return "";
-
+            if (v >= 1) return "I" + converter(v - 1); 
 
 
             throw new ArgumentOutOfRangeException("something bad happened we should feel bad");

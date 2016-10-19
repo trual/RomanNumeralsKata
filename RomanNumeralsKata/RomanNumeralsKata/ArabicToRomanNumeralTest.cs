@@ -19,5 +19,11 @@ namespace RomanNumeralsKata
             Assert.AreEqual("", ToRoman.converter(0));
         }
 
+        [TestMethod()]
+        public void convert1ToI()
+        {
+            Assert.AreEqual("I", ToRoman.converter(1));
+        }
+
     }
 }
