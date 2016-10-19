@@ -11,7 +11,11 @@ namespace RomanNumeralsKata
 
         public string converter(int v)
         {
-            return "meow";
+            if (v < 1) return "";
+
+
+
+            throw new ArgumentOutOfRangeException("something bad happened we should feel bad");
         }
     }
 }

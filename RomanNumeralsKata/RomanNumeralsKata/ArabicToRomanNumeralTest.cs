@@ -14,9 +14,9 @@ namespace RomanNumeralsKata
         ArabicToRomanNumeral ToRoman = new ArabicToRomanNumeral();
 
         [TestMethod()]
-        public void convert1ToI()
+        public void convert0ToI()
         {
-            Assert.AreEqual("meow", ToRoman.converter(1));
+            Assert.AreEqual("", ToRoman.converter(0));
         }
 
     }
