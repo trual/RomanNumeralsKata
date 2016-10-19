@@ -49,5 +49,12 @@ namespace RomanNumeralsKata
 
 
         }
+
+        [TestMethod()]
+        public void convert9()
+        {
+            Assert.AreEqual("IX", ToRoman.converter(9));
+
+        }
     }
 }

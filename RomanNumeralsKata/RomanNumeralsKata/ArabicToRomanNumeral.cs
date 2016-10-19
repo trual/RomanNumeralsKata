@@ -12,6 +12,7 @@ namespace RomanNumeralsKata
         public string converter(int v)
         {
             if (v < 1) return "";
+            if (v == 9) return "IX";
             if (v >= 5) return "V" + converter(v - 5);
             if (v == 4) return "IV";
             if (v >= 1) return "I" + converter(v - 1); 
