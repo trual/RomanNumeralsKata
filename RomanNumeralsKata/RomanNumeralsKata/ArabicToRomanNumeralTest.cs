@@ -66,5 +66,15 @@ namespace RomanNumeralsKata
         
 
         }
+        [TestMethod()]
+        public void convert40and42and44and48and49()
+        {
+            Assert.AreEqual("XL", ToRoman.converter(40));
+            Assert.AreEqual("XLII", ToRoman.converter(42));
+            Assert.AreEqual("XLIV", ToRoman.converter(44));
+            Assert.AreEqual("XLVIII", ToRoman.converter(48));
+            Assert.AreEqual("XLIX", ToRoman.converter(49));
+
+        }
     }
 }
