@@ -25,7 +25,14 @@ namespace RomanNumeralsKata
             int number = 0;
             for (int i = 0; i < str.Length; i++)
             {
-                number += RomanNumerals[str[i]];
+                if (i + 1 < str.Length && RomanNumerals[str[i]] < RomanNumerals[str[i + 1]])
+                {
+                    number -= RomanNumerals[str[i]];
+                   
+                }
+                else {
+                    number += RomanNumerals[str[i]];
+                }
             }
 
 
