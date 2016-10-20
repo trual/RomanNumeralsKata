@@ -29,5 +29,17 @@ namespace RomanNumeralsKata
         {
             Assert.AreEqual(4, ToArabic.converter("IV"));
         }
+
+        [TestMethod()]
+        public void convertIXto9()
+        {
+            Assert.AreEqual(9, ToArabic.converter("IX"));
+        }
+
+        [TestMethod()]
+        public void convertXLVIIIto48()
+        {
+            Assert.AreEqual(48, ToArabic.converter("XLVIII"));
+        }
     }
 }
