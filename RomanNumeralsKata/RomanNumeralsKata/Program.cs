@@ -13,15 +13,24 @@ namespace RomanNumeralsKata
         {
 
             ArabicToRomanNumeral ArabicToRomanNumeral = new ArabicToRomanNumeral();
+            RomanNumeralsToArabic ToArabic = new RomanNumeralsToArabic();
 
             string x = "";
 
             while (x != "x")
             {
-                Console.WriteLine("Please Enter an Integer");
-                int val = Int32.Parse(Console.ReadLine());
-                Console.WriteLine(ArabicToRomanNumeral.converter(val));
-
+                Console.WriteLine("Please Enter an Integer or a Roman Numeral");
+                string input = Console.ReadLine();
+                int number;
+                if (Int32.TryParse(input, out number))
+                {
+                    int val = number;
+                    Console.WriteLine(ArabicToRomanNumeral.converter(val));
+                }
+                else
+                {
+                    Console.WriteLine(ToArabic.converter(input));
+                }
                 x = Console.ReadLine();
             }
 
